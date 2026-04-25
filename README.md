@@ -2,9 +2,9 @@
 
 > **Current Versions:**
 >
-> - Next.js: ^14.2.30
-> - React: ^18
-> - Node.js: 22.15.0
+> - Next.js: ^16.2.4
+> - React: ^19
+> - Node.js: 24.14.1
 
 This project is a highly extensible Next.js + TypeScript template, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It is designed for rapid project initialization and best practices out of the box.
 
@@ -33,21 +33,14 @@ This project is a highly extensible Next.js + TypeScript template, bootstrapped 
      cd your-project-name
      ```
 2. **Install dependencies**
-   - Use your preferred package manager:
+   - We use pnpm for this template:
      ```bash
-     npm install
-     # or
-     yarn install
-     # or
      pnpm install
-     # or
-     bun install
      ```
 3. **Start the development server**
 
    ```bash
-   npm run dev
-   # or yarn dev / pnpm dev / bun dev
+   pnpm dev
    ```
 
    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -106,7 +99,7 @@ src/i18n/
 2. **Generate types** to ensure type safety:
 
    ```bash
-   npm run i18n:types
+   pnpm i18n:types
    ```
 
 3. **Use translations** in your components:
@@ -130,19 +123,19 @@ src/i18n/
 
 The project includes several scripts for managing i18n types:
 
-- **Generate types**: `npm run i18n:types`
+- **Generate types**: `pnpm i18n:types`
   - Generates TypeScript definitions from translation files
   - Updates `src/i18n/i18n-types.ts`
 
-- **Watch mode**: `npm run i18n:watch`
+- **Watch mode**: `pnpm i18n:watch`
   - Automatically regenerates types when translation files change
   - Useful during development
 
-- **Type checking**: `npm run i18n:check`
+- **Type checking**: `pnpm i18n:check`
   - Runs TypeScript compiler to check for type errors
   - Ensures all translations are properly typed
 
-- **Full validation**: `npm run i18n:lint`
+- **Full validation**: `pnpm i18n:lint`
   - Combines type generation and checking
   - Use this before commits to ensure type safety
 
@@ -176,7 +169,7 @@ The project includes several scripts for managing i18n types:
 
 4. **Generate types**:
    ```bash
-   npm run i18n:types
+   pnpm i18n:types
    ```
 
 ### Using the I18nProvider
