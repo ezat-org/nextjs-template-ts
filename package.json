@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run i18n:lint && next dev",
-    "build": "npm run i18n:lint && next build",
-    "prod": "npm run build && npm run start",
+    "dev": "pnpm i18n:lint && next dev",
+    "build": "pnpm i18n:lint && next build",
+    "prod": "pnpm build && pnpm start",
     "start": "next start",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
@@ -14,7 +14,7 @@
     "i18n:types": "typesafe-i18n --no-watch",
     "i18n:watch": "typesafe-i18n",
     "i18n:check": "tsc --noEmit",
-    "i18n:lint": "npm run i18n:types && npm run i18n:check"
+    "i18n:lint": "pnpm i18n:types && pnpm i18n:check"
   },
   "engines": {
     "node": "24.14.1"
